@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hassan Iqbal | Systems Engineer</title>
+    <meta
+      name="description"
+      content="Hassan Iqbal is a Senior Software Engineer focused on distributed systems, backend performance, and practical product engineering."
+    />
+    <style>
+      :root {
+        --paper: #fbfaf7;
+        --ink: #171717;
+        --muted: #74716b;
+        --line: #dfddd6;
+        --accent: #224f7a;
+        --code: #f1efe8;
+        --max: 1040px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          "Avenir Next",
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      .wrap {
+        width: min(calc(100% - 40px), var(--max));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 26px 0;
+        border-bottom: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .topbar strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .topbar nav {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        padding: 92px 0 74px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 300px;
+        gap: 72px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 760px;
+        font-size: clamp(46px, 7vw, 86px);
+        line-height: 1.02;
+        letter-spacing: -0.06em;
+        font-weight: 620;
+      }
+
+      .summary {
+        margin: 28px 0 0;
+        max-width: 640px;
+        color: #33312d;
+        font-size: 20px;
+        line-height: 1.58;
+      }
+
+      .facts {
+        align-self: start;
+        padding-top: 8px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 13px;
+      }
+
+      .facts dl {
+        margin: 0;
+      }
+
+      .facts div {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 16px;
+        padding: 13px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .facts dt {
+        color: var(--muted);
+      }
+
+      .facts dd {
+        margin: 0;
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 56px;
+        padding: 68px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .section > div > p:first-child {
+        margin-top: 0;
+      }
+
+      .writing {
+        max-width: 750px;
+        font-size: 19px;
+      }
+
+      .writing p {
+        margin: 0 0 22px;
+      }
+
+      .entry {
+        padding: 28px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .entry:first-child {
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .entry h3 {
+        margin: 0 0 8px;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+      }
+
+      .entry p {
+        margin: 0;
+        max-width: 720px;
+        color: #373531;
+        font-size: 17px;
+      }
+
+      .metric {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 5px 9px;
+        background: var(--code);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--accent);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 13px;
+      }
+
+      .stack {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 26px;
+      }
+
+      .stack ul {
+        margin: 12px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .stack li {
+        padding: 9px 0;
+        border-bottom: 1px solid var(--line);
+        color: #373531;
+      }
+
+      .stack h3 {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .contact {
+        padding: 82px 0;
+      }
+
+      .contact p {
+        max-width: 620px;
+        margin: 0 0 24px;
+        font-size: clamp(31px, 5vw, 54px);
+        line-height: 1.12;
+        letter-spacing: -0.045em;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      footer {
+        padding: 24px 0 42px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .hero,
+        .section,
+        .stack {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          gap: 42px;
+          padding: 64px 0 56px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <strong>Hassan Iqbal</strong>
+        <nav aria-label="Main navigation">
+          <a href="#notes">Notes</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <h1>Full-stack features, backend-heavy systems.</h1>
+            <p class="summary">
+              Senior Software Engineer in Islamabad, working across backend services, React features, databases, queues, and cloud deployments. My stack includes TypeScript, Node.js, PostgreSQL, React, Docker, Kubernetes, and Azure.
+            </p>
+          </div>
+
+          <aside class="facts" aria-label="Quick facts">
+            <dl>
+              <div>
+                <dt>Based</dt>
+                <dd>Islamabad</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>Senior Software Engineer</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Full-stack systems</dd>
+              </div>
+              <div>
+                <dt>Years</dt>
+                <dd>4</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="section" id="notes">
+          <h2>Working notes</h2>
+          <div class="writing">
+            <p>
+              My work covers APIs, a data pipeline, frontend workflows, auth flows, search indexing, queue-based processing, and CI/CD pipelines.
+            </p>
+            <p>
+              I have taken features from database and API design through React work, tests, CI/CD, containerization, and production releases.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>How I work</h2>
+          <div class="writing">
+            <p>
+              Before changing code, I look at the data shape, request path, UI flow, and failure cases. That usually makes the right fix easier to find.
+            </p>
+            <div class="stack">
+              <div>
+                <ul>
+                  <li>Make slow paths measurable before optimizing them.</li>
+                  <li>Keep API contracts easy to understand.</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Use clear data models instead of over-abstracting early.</li>
+                  <li>Think about UI behavior, retries, deployment, and failure paths early.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Case studies</h2>
+          <div>
+            <article class="entry">
+              <span class="metric">Performance</span>
+              <h3>Making a slow API usable</h3>
+              <p>
+                A catalog API had become too slow to use comfortably. The issue was not one expensive line of code. It was repeated database work, N+1 query behavior, and joins that looked reasonable on their own but became costly together.
+              </p>
+              <p>
+                I reworked the read path by reducing unnecessary joins, removing N+1 patterns, introducing Redis read-through caching with practical expiry rules, and using PostgreSQL materialized views for repeated computation.
+              </p>
+              <p>
+                Result: response time dropped from about 50 seconds to about 3 seconds.
+              </p>
+            </article>
+
+            <article class="entry">
+              <span class="metric">Search</span>
+              <h3>Search indexing without wasting space</h3>
+              <p>
+                For a dataset of roughly 10 million records, search performance depended on more than adding Elasticsearch. The important work was deciding what should be indexed, how fields should be mapped, and which data did not need to be indexed at all.
+              </p>
+              <p>
+                The indexing and mapping strategy focused on query latency and storage footprint.
+              </p>
+              <p>
+                Result: index size was reduced by 50%, and query latency improved by 2x.
+              </p>
+            </article>
+
+            <article class="entry">
+              <span class="metric">Async processing</span>
+              <h3>Moving fragile work out of request time</h3>
+              <p>
+                Some workflows had too many stages to keep inside a single request. When one part slowed down or failed, the whole path became hard to recover.
+              </p>
+              <p>
+                We moved the work into RabbitMQ-backed processing with retry queues and dead-letter exchanges, so failures could be handled explicitly instead of hidden inside blocking API calls.
+              </p>
+              <p>
+                Result: failures became easier to handle, and long-running work no longer had to block the request path.
+              </p>
+            </article>
+
+            <article class="entry">
+              <span class="metric">Frontend</span>
+              <h3>Owning the feature beyond the API</h3>
+              <p>
+                Built React and Material UI workflows for product import, catalog preview, and internal tools. The work was not just UI wiring. It involved shaping the API responses, handling loading and error states, and making the frontend match the backend behavior.
+              </p>
+            </article>
+
+            <article class="entry">
+              <span class="metric">Cloud and DevOps</span>
+              <h3>Shipping services to Kubernetes</h3>
+              <p>
+                Containerized services with Docker, worked with Azure Kubernetes Service deployments, and handled CI/CD release work for production changes. Used horizontal pod autoscaling and Azure CDN where load handling and asset delivery mattered.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="work">
+          <h2>Other work</h2>
+          <div>
+            <article class="entry">
+              <span class="metric">Auth</span>
+              <h3>Service-level access control</h3>
+              <p>
+                Implemented authentication and authorization across REST and GraphQL APIs with Keycloak, role checks, JWT sessions, and audit logging for sensitive operations.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Preferred work</h2>
+          <div>
+            <div class="writing">
+              <p>
+                The work I enjoy most has a real connection between backend, frontend, and deployment choices. Data needs to move cleanly, APIs need to stay understandable, screens need to handle real states, and releases need to be safe.
+              </p>
+            </div>
+            <div class="stack">
+              <div>
+                <ul>
+                  <li>High-read APIs and backend services</li>
+                  <li>End-to-end product features</li>
+                  <li>Search, indexing, and data retrieval</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Permission-heavy systems and audit trails</li>
+                  <li>Queue-driven workflows and background processing</li>
+                  <li>Internal tools, admin workflows, and production releases</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Current focus</h2>
+          <div>
+            <div class="writing">
+              <p>
+                Current focus areas are distributed systems design, database performance, event-driven workflows, and production deployment practices. The goal is simple: build features that are easier to use, run, and debug.
+              </p>
+            </div>
+            <div class="stack">
+              <div>
+                <ul>
+                  <li>Better boundaries between services</li>
+                  <li>More intentional database and cache design</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Observable async processing</li>
+                  <li>Safer releases with Docker, Kubernetes, and CI/CD</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+          <div>
+            <div class="writing">
+              <p>
+                Currently at Zones IT Solutions, my work covers backend services, data-heavy APIs, access control, async workflows, React workflows, and production releases. A feature often starts with system design and data modeling, then continues through API implementation, frontend work, testing, CI/CD, and deployment.
+              </p>
+              <p>
+                Earlier at the same company, the work covered React features, NestJS APIs, shared TypeScript tooling, and query generation modules. That period gave me useful range before my work moved deeper into backend-heavy distributed systems.
+              </p>
+            </div>
+            <div class="stack">
+              <div>
+                <h3>Senior Software Engineer</h3>
+                <ul>
+                  <li>Zones IT Solutions</li>
+                  <li>Sep 2024 to Present</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Software Engineer</h3>
+                <ul>
+                  <li>Zones IT Solutions</li>
+                  <li>Sep 2022 to Sep 2024</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Toolkit</h2>
+          <div class="stack">
+            <div>
+              <h3>Backend and data</h3>
+              <ul>
+                <li>Node.js, NestJS, TypeScript</li>
+                <li>REST, GraphQL, OAuth2/OIDC</li>
+                <li>PostgreSQL, TypeORM migrations, indexing</li>
+                <li>RabbitMQ, Redis, Elasticsearch</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Frontend and delivery</h3>
+              <ul>
+                <li>React and Material UI workflows</li>
+                <li>Jest unit and integration tests</li>
+                <li>Docker, Kubernetes, Azure AKS</li>
+                <li>CI/CD pipelines and Azure CDN</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <p>If you want to talk about full-stack systems, APIs, frontend workflows, performance, or production delivery, email is the easiest way to reach me.</p>
+          <div class="links">
+            <a href="mailto:hasaniqqureshi@gmail.com">hasaniqqureshi@gmail.com</a>
+            <a href="https://www.linkedin.com/in/hassaniqbalqureshi/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/hasssaniqbal" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>Zones IT Solutions, Islamabad, Pakistan</footer>
+    </div>
+  </body>
+</html>
